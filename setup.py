@@ -4,11 +4,11 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='colors',
+    name='skill-1400',
     version='1.0.0',
     author='Vitaliy Zarubin',
     author_email='keygenqt@gmail.com',
-    description='Update clone colors from a config yaml. Parse sketch file to conf.',
+    description='Solving tasks from the book "1400 задач по программированию"',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://git.pinxterapp.com/android/app-colors',
@@ -17,7 +17,6 @@ setuptools.setup(
     py_modules=['colors'],
     install_requires=[
         'click',
-        'pyYaml',
         'matplotlib'
     ],
     python_requires='>=3.6',
