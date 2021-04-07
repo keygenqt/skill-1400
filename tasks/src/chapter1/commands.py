@@ -79,3 +79,42 @@ def task_13():
     value = click.prompt('Please enter number', type=click.INT)
     click.echo('After number {} - {}'.format(value, value + 1))
     click.echo('Before number {} - {}'.format(value, value - 1))
+
+
+@cli_chapter1.command()
+def task_14():
+    value1 = click.prompt('Please enter number 1', type=click.INT)
+    value2 = click.prompt('Please enter number 2', type=click.INT)
+    value3 = click.prompt('Please enter number 3', type=click.INT)
+    click.echo('  '.join(str(i) for i in [value1, value2, value3]))
+
+
+@cli_chapter1.command()
+def task_15():
+    value1 = click.prompt('Please enter number 1', type=click.INT)
+    value2 = click.prompt('Please enter number 2', type=click.INT)
+    value3 = click.prompt('Please enter number 3', type=click.INT)
+    value4 = click.prompt('Please enter number 4', type=click.INT)
+    click.echo(' '.join(str(i) for i in [value1, value2, value3, value4]))
+
+
+@cli_chapter1.command()
+def task_16():
+    valueT = click.prompt('Please enter number {}'.format(click.style('t', fg="red")), type=click.INT)
+    valueV = click.prompt('Please enter number {}'.format(click.style('v', fg="red")), type=click.INT)
+    valueX = click.prompt('Please enter number {}'.format(click.style('x', fg="red")), type=click.INT)
+    valueY = click.prompt('Please enter number {}'.format(click.style('y', fg="red")), type=click.INT)
+
+    click.echo("""\na)  5 10     b) 100 {}    c) {} 25""".format(valueT, valueX))
+    click.echo("""    7 sm        1949 {}      {} {}""".format(valueV, valueX, valueY))
+
+
+@cli_chapter1.command()
+def task_17():
+    valueA = click.prompt('Please enter number {}'.format(click.style('a', fg="red")), type=click.INT)
+    valueB = click.prompt('Please enter number {}'.format(click.style('b', fg="red")), type=click.INT)
+    valueX = click.prompt('Please enter number {}'.format(click.style('x', fg="red")), type=click.INT)
+    valueY = click.prompt('Please enter number {}'.format(click.style('y', fg="red")), type=click.INT)
+
+    click.echo("""\na)  2 kg     b) {} 1    c) {} {}""".format(valueA, valueX, valueY))
+    click.echo("""    13 17       19 {}      5 {}""".format(valueB, valueY))
