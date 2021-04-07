@@ -83,18 +83,18 @@ def task_13():
 
 @cli_chapter1.command()
 def task_14():
-    value1 = click.prompt('Please enter number 1', type=click.INT)
-    value2 = click.prompt('Please enter number 2', type=click.INT)
-    value3 = click.prompt('Please enter number 3', type=click.INT)
+    value1 = click.prompt('Please enter number first', type=click.INT)
+    value2 = click.prompt('Please enter number second', type=click.INT)
+    value3 = click.prompt('Please enter number third', type=click.INT)
     click.echo('  '.join(str(i) for i in [value1, value2, value3]))
 
 
 @cli_chapter1.command()
 def task_15():
-    value1 = click.prompt('Please enter number 1', type=click.INT)
-    value2 = click.prompt('Please enter number 2', type=click.INT)
-    value3 = click.prompt('Please enter number 3', type=click.INT)
-    value4 = click.prompt('Please enter number 4', type=click.INT)
+    value1 = click.prompt('Please enter number first', type=click.INT)
+    value2 = click.prompt('Please enter number second', type=click.INT)
+    value3 = click.prompt('Please enter number third', type=click.INT)
+    value4 = click.prompt('Please enter number fourth', type=click.INT)
     click.echo(' '.join(str(i) for i in [value1, value2, value3, value4]))
 
 
