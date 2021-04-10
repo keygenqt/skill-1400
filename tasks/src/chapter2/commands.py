@@ -1,3 +1,5 @@
+from math import sqrt, sin, fabs
+
 import click
 
 
@@ -8,18 +10,38 @@ def cli_chapter2():
 
 
 @cli_chapter2.command()
-def task_1():
-    pass
+def task_1_a():
+    x = click.prompt('Please enter x', type=click.INT)
+    y = 17 * (x ** 2) - 6 * x + 13
+    click.echo('Result: {}'.format(y))
+
+
+@cli_chapter2.command()
+def task_1_b():
+    a = click.prompt('Please enter a', type=click.INT)
+    y = 3 * (a ** 2) + 5 * a - 21
+    click.echo('Result: {}'.format(y))
 
 
 @cli_chapter2.command()
 def task_2():
-    pass
+    a = click.prompt('Please enter a', type=click.INT)
+    y = ((a ** 2) + 10) / sqrt((a ** 2) + 1)
+    click.echo('Result: {}'.format(y))
 
 
 @cli_chapter2.command()
-def task_3():
-    pass
+def task_3_a():
+    a = click.prompt('Please enter a', type=click.INT)
+    y = sqrt((2 * a + sin(fabs(3 * a))) / 3.56)
+    click.echo('Result: {}'.format(y))
+
+
+@cli_chapter2.command()
+def task_3_b():
+    x = click.prompt('Please enter x', type=click.INT)
+    y = (3.2 + sqrt(1 + x)) / fabs(5 * x)
+    click.echo('Result: {}'.format(y))
 
 
 @cli_chapter2.command()
