@@ -1,4 +1,4 @@
-from math import sqrt, sin, fabs
+from math import sqrt, sin, fabs, pi
 
 import click
 
@@ -46,12 +46,14 @@ def task_3_b():
 
 @cli_chapter2.command()
 def task_4():
-    pass
+    length = click.prompt('Please enter length of the square', type=click.INT)
+    click.echo('Perimeter: {}'.format(length * 4))
 
 
 @cli_chapter2.command()
 def task_5():
-    pass
+    radius = click.prompt('Please enter circle radius', type=click.INT)
+    click.echo('Diameter: {}'.format(radius / pi))
 
 
 @cli_chapter2.command()
